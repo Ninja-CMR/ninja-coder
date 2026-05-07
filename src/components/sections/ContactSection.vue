@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <section class="action-section min-h-screen w-full flex flex-col items-center justify-center py-40 px-8">
     <h2 class="text-center mb-12 text-[clamp(2rem,6vw,5rem)] font-semibold tracking-tight text-white uppercase">PRÊT À DEVENIR UNIQUE ?</h2>
-    <a href="https://wa.me/2376XXXXXXXXX" target="_blank" class="action-btn inline-block px-16 py-6 bg-accent text-black font-bold text-2xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_#a3ff0066]">
+    <a href="https://wa.me/237696172899" target="_blank" class="action-btn inline-block px-16 py-6 bg-accent text-black font-bold text-2xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_#a3ff0066]">
       LET'S INNOVATE
     </a>
     
