@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #a3ff00;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
+
+@layer base {
+  :root {
+    --bg-color: #0a0a0a;
+    --accent-color: #a3ff00;
+    --font-main: 'Outfit', sans-serif;
+    --text-primary: #ffffff;
+    --text-secondary: #888888;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    cursor: none;
+  }
+
+  ::selection {
+    background-color: var(--accent-color);
+    color: #000;
+  }
+}
+
+/* Smooth Scrolling (Lenis) */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
