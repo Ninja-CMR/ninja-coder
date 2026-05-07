@@ -9,6 +9,7 @@ import CustomCursor from './components/CustomCursor.vue'
 import Preloader from './components/Preloader.vue'
 import DetailView from './components/DetailView.vue'
 import Landing from './components/Landing.vue'
+import SmokeAtmosphere from './components/SmokeAtmosphere.vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -39,6 +40,8 @@ onMounted(() => {
     <Preloader />
     <NoiseBg />
     <CustomCursor />
+    <SmokeAtmosphere />
+    <div class="hostile-atmosphere"></div>
     
     <DetailView 
       v-if="activeDetail"

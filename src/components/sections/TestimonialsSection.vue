@@ -9,19 +9,21 @@ onMounted(() => {
   gsap.from('.testimonial-card', {
     scrollTrigger: {
       trigger: '.testimonials-grid',
-      start: 'top 80%',
+      start: 'top 92%', // Trigger much earlier
     },
-    y: 50,
+    y: 60,
+    scale: 0.9,
     opacity: 0,
-    duration: 1,
-    stagger: 0.2,
-    ease: 'power3.out',
+    duration: 1.2,
+    stagger: 0.15,
+    ease: 'power4.out',
   })
 })
 </script>
 
 <template>
-  <section class="testimonials-section min-h-screen w-screen flex flex-col items-center justify-center bg-black/50 py-32 px-8">
+  <section class="testimonials-section min-h-screen w-full flex flex-col items-center justify-center py-32 px-8 overflow-hidden relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-accent/3 to-transparent pointer-events-none"></div>
     <h2 class="text-center mb-12 text-[clamp(2rem,6vw,5rem)] font-semibold tracking-tight text-white uppercase">CONFIANCE & RÉSULTATS</h2>
     <div class="testimonials-grid grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
       <div class="testimonial-card bg-white/5 border border-white/10 p-10 rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-accent">
